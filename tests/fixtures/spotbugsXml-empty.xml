@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BugCollection sequence='0' release='' analysisTimestamp='1591914418522' version='4.0.0' timestamp='1591914415000'>
+    <Project projectName='test-project'>
+        <Jar>/home/runner/work/test/test/target/classes</Jar>
+    </Project>
+    <Errors errors='0' missingClasses='0'/>
+    <FindBugsSummary timestamp='Thu, 11 Jun 2020 19:46:55 +0000' total_classes='1' referenced_classes='1' total_bugs='0' total_size='100' num_packages='1' cpu_seconds='5.00' clock_seconds='5.00' peak_mbytes='100.00' alloc_mbytes='200.00' gc_seconds='0.10' priority_2='0' priority_3='0'/>
+</BugCollection>

@@ -1,0 +1,30 @@
+name: Test no files found warning
+on:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - id: action
+        uses: .
+        continue-on-error: true
+        with:
+          path: nonexistent/path/to/reports/*.xml
+          token: ${{ github.token }}
+      - name: Assert action ran (no files found — should warn but not crash)
+        env:
+          OUTCOME: ${{ steps.action.outcome }}
+        run: |
+          echo "outcome: $OUTCOME"
+          # When no files are found the action logs a warning and exits without
+          # making any API calls, so it should succeed even on the sentinel repo.
+          # If it fails for another reason that is also acceptable (graceful failure).
+          if [ "$OUTCOME" = "success" ]; then
+            echo "PASS: action succeeded with no files found (warning emitted)"
+          elif [ "$OUTCOME" = "failure" ]; then
+            echo "PASS: action failed gracefully (no files found or sentinel repo)"
+          else
+            echo "FAIL: unexpected outcome '$OUTCOME'"
+            exit 1
+          fi

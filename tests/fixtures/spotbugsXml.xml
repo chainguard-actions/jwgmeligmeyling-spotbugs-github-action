@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BugCollection sequence='0' release='' analysisTimestamp='1591914418522' version='4.0.0' timestamp='1591914415000'>
+    <Project projectName='test-project'>
+        <Jar>/home/runner/work/test/test/target/classes</Jar>
+    </Project>
+    <BugInstance type='NP_NULL_ON_SOME_PATH' priority='2' rank='9' abbrev='NP' category='CORRECTNESS'>
+        <ShortMessage>Null pointer dereference</ShortMessage>
+        <LongMessage>Null pointer dereference of value returned from method</LongMessage>
+        <Class classname='com.example.Foo' primary='true'>
+            <SourceLine classname='com.example.Foo' start='10' end='10' sourcefile='Foo.java' sourcepath='com/example/Foo.java'/>
+            <Message>In class com.example.Foo</Message>
+        </Class>
+        <Method classname='com.example.Foo' name='bar' signature='()V' isStatic='false' primary='true'>
+            <SourceLine classname='com.example.Foo' start='10' end='10' sourcefile='Foo.java' sourcepath='com/example/Foo.java'/>
+            <Message>In method com.example.Foo.bar()</Message>
+        </Method>
+        <SourceLine classname='com.example.Foo' start='10' end='10' sourcefile='Foo.java' sourcepath='com/example/Foo.java' primary='true'>
+            <Message>At Foo.java:[line 10]</Message>
+        </SourceLine>
+    </BugInstance>
+    <Errors errors='0' missingClasses='0'/>
+    <FindBugsSummary timestamp='Thu, 11 Jun 2020 19:46:55 +0000' total_classes='1' referenced_classes='1' total_bugs='1' total_size='100' num_packages='1' cpu_seconds='5.00' clock_seconds='5.00' peak_mbytes='100.00' alloc_mbytes='200.00' gc_seconds='0.10' priority_2='1' priority_3='0'/>
+</BugCollection>
