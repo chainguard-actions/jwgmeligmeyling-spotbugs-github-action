@@ -6,9 +6,9 @@ Hardened by [Chainguard](https://www.chainguard.dev) from the upstream action at
 
 ## Versions
 
-| Version | Tag | Upstream commit |
-|---------|-----|-----------------|
-| v1.2 | [`v1.2`](https://github.com/chainguard-actions/jwgmeligmeyling-spotbugs-github-action/tree/v1.2) | [`b8e2c35`](https://github.com/jwgmeligmeyling/spotbugs-github-action/commit/b8e2c3523acb34c87f14e18cbcd2d87db8c8584e) |
+| Version | Tag | Upstream commit | Hardening report |
+|---------|-----|-----------------|------------------|
+| v1.2 | [`v1.2`](https://github.com/chainguard-actions/jwgmeligmeyling-spotbugs-github-action/tree/v1.2) | [`b8e2c35`](https://github.com/jwgmeligmeyling/spotbugs-github-action/commit/b8e2c3523acb34c87f14e18cbcd2d87db8c8584e) | [`HARDENING.md`](https://github.com/chainguard-actions/jwgmeligmeyling-spotbugs-github-action/blob/v1.2/HARDENING.md) |
 
 ## Privacy
 
